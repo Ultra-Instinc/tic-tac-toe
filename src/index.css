@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply p-0 m-0 box-border
+}
+html {
+ @apply font-mono text-[16px] uppercase 
+}
+body{
+  @apply bg-tictactoe-bg_dark text-tictactoe-text_light
+}
+.app{
+  @apply flex items-center justify-center  min-h-screen
+}
+.container {
+  @apply max-w-[450px] mx-auto w-[100%]  
+  py-[2rem] px-[1rem] 
+}
+
+.card{
+  @apply p-[25px] flex flex-col gap-[25px] rounded-[15px] bg-tictactoe-bg_light text-center
+}
+
+.start {
+  @apply flex flex-col gap-[25px] 
+}
+
+.start_header{
+  @apply flex items-center justify-center
+}
+.start_players{
+  @apply bg-tictactoe-bg_dark rounded-[15px] p-[10px] flex items-center  shadow-inner
+}
+
+.start_players--active{
+  @apply bg-tictactoe-text_light shadow-md shadow-tictactoe-text_light
+}
+
+.start_btns{
+  @apply flex flex-col gap-[12px] 
+}
+.btn{
+  @apply bg-tictactoe-text_light text-[1.125rem] font-bold py-[12px] px-[25px] uppercase text-tictactoe-bg_light rounded-[10px] inline-block shadow-md shadow-tictactoe-text_dark mb-2 hover:shadow-lg hover:translate-y-[-2px] transition-all hover:shadow-tictactoe-text_dark active:translate-y-[2px] active:shadow-sm active:shadow-tictactoe-text_dark
+}
+.btn_yellow{
+  @apply bg-tictactoe-x_light shadow-tictactoe-x_dark hover:shadow-lg hover:translate-y-[-2px] transition-all hover:shadow-tictactoe-x_dark active:translate-y-[2px] active:shadow-sm active:shadow-tictactoe-x_dark
+}
+.btn_blue{
+  @apply bg-tictactoe-o_light shadow-tictactoe-o_dark hover:shadow-lg hover:translate-y-[-2px] transition-all hover:shadow-tictactoe-o_dark active:translate-y-[2px] active:shadow-sm active:shadow-tictactoe-o_dark
+}
+
+.shadow_gray{
+  @apply shadow-md shadow-tictactoe-text_dark
+}
+.shadow_blue{
+  @apply shadow-md shadow-tictactoe-o_dark
+}
+.shadow_yellow{
+  @apply shadow-md shadow-tictactoe-x_dark
+}
+.bg_light{
+  @apply bg-tictactoe-text_light text-tictactoe-bg_dark
+}
+.bg_yellow{
+  @apply bg-tictactoe-x_light text-tictactoe-bg_dark
+}
+.bg_blue{
+  @apply bg-tictactoe-o_light text-tictactoe-bg_dark
+}
+.icon {
+  @apply inline-block 
+}
+
+.icon svg{
+  @apply  fill-tictactoe-text_light align-middle h-[50px] group-active:rotate-180
+}
+.icon-sm svg{
+  @apply h-[30px]
+}
+.icon-lg svg{
+  @apply h-[65px]
+}
+.icon-yellow svg{
+  @apply fill-tictactoe-x_light
+}
+.icon-blue svg{
+  @apply fill-tictactoe-o_light
+}
+.icon-blue svg{
+  @apply fill-tictactoe-o_light
+}
+.icon-dark svg{
+  @apply fill-tictactoe-bg_dark
+}
+.board_header{
+  @apply flex items-center justify-between mb-[50px]
+}
+.board_turn{
+  @apply rounded-[5px] bg-tictactoe-bg_light flex py-1 px-2  items-center gap-1 shadow-md shadow-tictactoe-bg_light
+}
+
+.board_restart{
+  @apply  flex items-center duration-300 
+}
+.board_body{
+  @apply grid grid-cols-3 gap-5
+}
+.board_body .card{
+  @apply h-[120px] flex justify-center items-center cursor-pointer p-[10px]
+}
+
+.board_body .active.shadow_blue{
+  @apply bg-tictactoe-o_light
+}
+.board_body .active.shadow_yellow{
+  @apply bg-tictactoe-x_light
+}
+.board_footer{
+  @apply mt-[30px] grid grid-cols-3 gap-5
+}
+.board_footer .card {
+  @apply gap-[15px]
+}
+
+.modal{
+  @apply fixed top-0 left-0 w-screen h-screen z-[99999] bg-black/70 flex  items-center
+}
+.modal_content{
+  @apply w-[100%] bg-tictactoe-bg_light
+}
+
+.score {
+  @apply text-center 
+}
+.score_title{
+  @apply text-[2rem] flex items-center gap-[6px] justify-center mx-[30px]
+}
+.score_btn{
+  @apply flex items-center justify-center gap-[15px]
+}
+.restart{
+  @apply text-center 
+}
+
+.restart_title{
+  @apply text-[2rem] flex items-center mb-[30px] gap-[6px] justify-center mx-[30px]
+}
+.restart_btn{
+  @apply flex items-center justify-center gap-[15px]
+}
