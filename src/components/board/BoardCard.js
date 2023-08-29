@@ -12,7 +12,7 @@ const BoardCard = ({user='nouser',active,index}) => {
     
     onClick={()=>handleSquareClick(index)}
     >
-      <div className={`absolute z-[999999] inset-0 top-0 left-0 bg-gradient-to-tr from-tictactoe-x_light to-tictactoe-o_light duration-200 opacity-0 hover:opacity-10`}></div>
+      <div className={`absolute rounded-md z-[99] inset-1   bg-gradient-to-tr from-tictactoe-x_light to-tictactoe-o_light duration-200 opacity-0 hover:opacity-10`}></div>
         {user==='x'&&<Xicon size={100} color={active&&'dark'}/>}
         {user==='o'&&<Oicon size={100} color={active&&'dark'}/>}
     </div>

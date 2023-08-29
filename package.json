@@ -1,5 +1,5 @@
 {
-  "homepage":"http://Ultra-Instinct.github.io/tic-tac-toe",
+  "homepage": "http://Ultra-Instinct.github.io/tic-tac-toe",
   "name": "tic-tac-toe-update",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +20,6 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": [

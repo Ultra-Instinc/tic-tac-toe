@@ -9,7 +9,7 @@ html {
  @apply font-mono text-[16px] uppercase 
 }
 body{
-  @apply bg-tictactoe-bg_dark text-tictactoe-text_light
+  @apply bg-tictactoe-bg_dark text-tictactoe-text_light overflow-hidden
 }
 .app{
   @apply flex items-center justify-center  min-h-screen
