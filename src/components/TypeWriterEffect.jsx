@@ -1,10 +1,10 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 const TypeWriterEffect = () => {
 	const [text] = useTypewriter({
-		words: ["I hope that you Have Fun", "I hope that you Enjoy"],
+		words: ["Good Luck", "Have Fun"],
 		loop: true,
-		typeSpeed: 10,
-		deleteSpeed: 5,
+		typeSpeed: 50,
+		deleteSpeed: 80,
 		delaySpeed: 4000,
 	});
 	return (

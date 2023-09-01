@@ -2,11 +2,17 @@ import React, { useContext } from "react";
 import Xicon from "../../icons/Xicon";
 import Oicon from "../../icons/Oicon";
 import GameContext from "../../context/gameContext";
+import TypeWriterEffect from "../TypeWriterEffect";
 
 const Start = () => {
 	const { activeUser, setActiveUser, changePlayMode } = useContext(GameContext);
 	return (
 		<div className='start'>
+			<div className='absolute mx-auto font-serif  z-50 top-[2%] p-5 text-3xl'>
+				<div className='relative text-left top-0 left-0'>
+					<TypeWriterEffect />
+				</div>
+			</div>
 			<div className='start_header'>
 				<Xicon size={60} />
 				<Oicon size={60} />
