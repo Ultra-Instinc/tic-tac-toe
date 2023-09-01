@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import Xicon from "../../icons/Xicon";
 import Oicon from "../../icons/Oicon";
 import GameContext from "../../context/gameContext";
-import ParticlesContainer from "../ParticlesContainer";
 
 const Start = () => {
 	const { activeUser, setActiveUser, changePlayMode } = useContext(GameContext);
