@@ -15,13 +15,15 @@ function Provider2({children}){
   const [ties,setTies]=useState({x:0,o:0,draw:0})
   
   const {showModal,setModalMode,hideModal} = useContext(ModalContext)
+
     useEffect(() => {
+        checkNoWinner();
         //check if cpu turn
         let currentUser = xNext ? "o" : "x";
         if (playMode === "cpu" && currentUser !== activeUser && !winner) {
           cpuNextMove(squares);
         }
-        checkNoWinner();
+        
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [xNext, winner, screen]);
 
